@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingVertical="20dp"
+    android:orientation="vertical"
+    android:background="@color/teal_700"
+    tools:context=".Profile">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Choose your option"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/newCultivationButtonId"
+
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:text="Start New Cultivation"
+        android:layout_margin="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/historyButtonId"
+
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:text="Last Cultivation"
+        android:layout_margin="10dp"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/helpButtonId"
+
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:text="Help"
+        android:layout_margin="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/logOutButtonId"
+
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:textAllCaps="false"
+        android:text="Log Out"
+        android:layout_margin="10dp"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

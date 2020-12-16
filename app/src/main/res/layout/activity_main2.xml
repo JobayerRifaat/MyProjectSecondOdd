@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:gravity="center"
+    android:padding="20sp"    android:background="@color/teal_700"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="20sp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioButtonId"
+
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Do you want to use Drum Seeder?"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/yesButtonId"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/noButtonId"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/seedAmountTextId"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/applyButtonId"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="How much seeding cost?"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:id="@+id/editSeedingCostId"
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="true"
+                android:hint="Cost of Seeding(in taka)"
+                android:inputType="numberDecimal"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioButton2Id"
+
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Do you want to use Urea Super Granules?"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/yesButton2Id"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/noButton2Id"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:padding="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/fertilizerAmountTextId"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/applyButton2Id"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:textSize="20sp"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="How much fertilizers cost?"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:id="@+id/editFertilizerCostId"
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="true"
+                android:hint="Cost of Fertilizer(in taka)"
+                android:inputType="numberDecimal"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="How much irrigation cost?"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:id="@+id/editIrrigationCostId"
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="true"
+                android:hint="Cost of Irrigation(in taka)"
+                android:inputType="numberDecimal"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="How much pest management cost?"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:id="@+id/editPestManagementCostId"
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="true"
+                android:hint="Cost of Pest Management(in taka)"
+                android:inputType="numberDecimal"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/nextButton2Id"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
