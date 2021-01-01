@@ -82,7 +82,7 @@ public class Cultivation extends AppCompatActivity implements View.OnClickListen
                             }
 
                             else
-                                datePickerText.setText("This is not any apropriate season\n Please select another date");
+                                datePickerText.setText("This is not any apropriate season\nPlease select another date\n\nAus => (30 March - 20 April)\nAman => (15 June - 30 July)\nBoro => (15 November - 30 November)");
                         }
 
                     }, currentYear, currentMonth, currentDay);

@@ -73,9 +73,18 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
             Log.v("check", "\nland: "+land+"\n ricetype: "+riceType+"\n total cost: "+totalCost);
             Log.v("check", "\n"+drumSeeder+"\n"+ureaSG);
 
-            if(riceType == 1) yield=find_yield("district1.txt",district);//yield = 1012.5;
-            else if(riceType == 2) yield=find_yield("district2.txt",district);//yield = 1032.75;
-            else if(riceType == 3) yield=find_yield("district3.txt",district);//yield = 1680.75;
+            if(riceType == 1) {
+                yield=find_yield("district1.txt",district);
+                if(yield==0)yield = 1012.5;
+            }
+            else if(riceType == 2) {
+                yield=find_yield("district2.txt",district);
+                if(yield==0)yield = 1032.75;
+            }
+            else if(riceType == 3) {
+                yield=find_yield("district3.txt",district);
+                if(yield==0)yield = 1680.75;
+            }
 
             double production = yield*land;
 
@@ -85,7 +94,7 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
             price = production*price;
 
 
-            Result = "Land: "+land+" acre\nProduction: "+production+" kg\nTotal cost: "+totalCost+" taka\nPrice: "+price+" taka\nProfit/Loss: "+(price-totalCost)+" taka\n";
+            Result = "Land: "+land+" acre\nProduction: "+(float)production+" kg\nTotal cost: "+(float)totalCost+" taka\nPrice: "+(float)price+" taka\n\nProfit/Loss: "+(float)(price-totalCost)+" taka\n";
             resultText.setText(Result);
 
             //String history = readFromFile(filename+"result");
