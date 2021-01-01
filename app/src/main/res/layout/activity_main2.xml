@@ -238,6 +238,30 @@
                 android:textAllCaps="false"
                 android:textSize="20sp" />
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Others cost (labours, equipment, preservation etc):"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:id="@+id/editOthersCostId"
+
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="true"
+                android:hint="Others Cost(in taka)"
+                android:inputType="numberDecimal"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
             <Button
                 android:id="@+id/nextButton2Id"
 

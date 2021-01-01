@@ -16,7 +16,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
     private RadioGroup radiogroup, radiogroup2;
     private RadioButton yesOrNo, yesOrNo2;
-    private EditText seedingCost, fertilizerCost, irrigationCost, pestManagementCost;
+    private EditText seedingCost, fertilizerCost, irrigationCost, pestManagementCost, othersCost;
 
     private Button next2, apply, apply2;
 
@@ -39,6 +39,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         fertilizerCost = (EditText) findViewById(R.id.editFertilizerCostId);
         irrigationCost = (EditText) findViewById(R.id.editIrrigationCostId);
         pestManagementCost = (EditText) findViewById(R.id.editPestManagementCostId);
+        othersCost = (EditText) findViewById(R.id.editOthersCostId);
 
         next2 = (Button) findViewById(R.id.nextButton2Id);
         apply = (Button) findViewById(R.id.applyButtonId);
@@ -116,7 +117,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
                         fertilizerAmount.setText("You will be needed \n" + land * 105 + " kg Urea, \n" + land * 40 + " kg TSP, \n"+ land * 49 + " kg MP,\n"+ land * 55 + " kg Gypsum,\n"+ land * 4 + " kg Zinc sulphate");
                 }
 
-                Log.v("check", "\nApply2 Button is clecked");
+                //Log.v("check", "\nApply2 Button is clecked");
             }
 
         }
@@ -130,12 +131,14 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
             double irrigation = Double.parseDouble(irrigationcost);
             String pestmanagementcost = pestManagementCost.getText().toString();
             double pestmanagement = Double.parseDouble(pestmanagementcost);
+            String otherscost = othersCost.getText().toString();
+            double others = Double.parseDouble(otherscost);
 
             //Toast.makeText(MainActivity2.this, "Next Button is clicked", Toast.LENGTH_SHORT).show();
             Log.v("check", "\nland: "+land+"\n ricetype: "+riceType+"\n seeding cost: "+seed+"\n fertilizer cost: "+fertilizer+"\n irrigation cost: "+irrigation+"\n pest management cost: "+pestmanagement);
             Log.v("check", "\n"+drumSeeder+"\n"+ureaSG);
 
-            double totalCost = seed+fertilizer+irrigation+pestmanagement; Log.v("check", "\n"+totalCost);
+            double totalCost = seed+fertilizer+irrigation+pestmanagement+others; //Log.v("check", "\n"+totalCost);
 
             Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
             intent.putExtra("land",land);
